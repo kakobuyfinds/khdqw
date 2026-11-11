@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>FansBuy spreadsheet : catégories, tailles et photos QC</title>
+<meta name="description" content="Explorez les catégories du FansBuy spreadsheet et apprenez à vérifier un lien produit, comparer les tailles et lire les photos QC avant une commande.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FansBuy spreadsheet : catégories, tailles et photos QC">
+<meta property="og:description" content="Un guide en français pour comparer chaussures, vêtements et accessoires avant de commander.">
+<!-- Bing : première page inaccessible lors de la recherche. Analyse de dix domaines issus de la recherche web disponible :
+fansbuy.net (catégories, liens), fansbuysheets.net (catalogue, QC), fansbuyspreadsheet.com (guide d’achat), fansbuybuy.autos (FAQ, expédition), fansbuy.co.uk (catalogue, tailles), one-to-oneyupoo.com (références, liens sources), maisonlooks.com (fiches, marketplaces), spreadsheetsfansbuy.makeup (photos QC, livraison), usfansfindlinks.com (comparaison des services), fansbuys.net (catégories, vérifications). -->
+<!-- Requêtes secondaires : guide FansBuy, liens produits FansBuy, photos QC FansBuy, tailles FansBuy, livraison internationale FansBuy.
+Expressions de recherche : baskets Nike Air Force 1 blanches, mesurer le pied en centimètres, comparer pointure EU et US, vérifier la longueur de semelle, photos QC de chaussures, vérifier la taille d’un sweat à capuche, largeur de poitrine à plat, longueur de manches d’une veste, T-shirt Dior CD Icon blanc, mesurer un short à la taille, choisir la coupe d’un maillot, vérifier une personnalisation de maillot, mesurer le tour de tête, casquette Gucci en toile GG, sac Louis Vuitton Neverfull MM Monogram, bracelet Hermès Clic H blanc, mesurer le tour de poignet, vérifier un fermoir de bracelet, retrouver un lien produit Weidian, retrouver une fiche Taobao, identifier la variante sur 1688, contrôler le coloris d’une fiche produit, comparer le poids réel et volumétrique, estimer les frais de livraison en France, vérifier les conditions de retour du vendeur. -->
+<style>
+:root{color-scheme:light;--paper:#faf6ed;--ink:#261e31;--muted:#594c5d;--plum:#492849;--lime:#e2edaa;--line:#d9ced8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+a{color:inherit;text-underline-offset:.24em}
+a:focus-visible,summary:focus-visible{outline:3px solid #963e65;outline-offset:4px}
+.wrap{width:min(1100px,calc(100% - 2rem));margin-inline:auto}
+header{padding:.9rem 0;border-bottom:1px solid var(--line)}
+header .wrap,footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap}
+.brand{font-weight:850;text-decoration:none}
+.hero{display:grid;grid-template-columns:1.28fr 1fr;gap:1.5rem;align-items:center;padding:1.4rem 0}
+h1,h2,h3,p,figure{margin:0}
+h1{font-size:clamp(2.3rem,6vw,5.1rem);line-height:1;letter-spacing:-.065em;overflow-wrap:anywhere}
+h2{font-size:clamp(1.5rem,3vw,2.25rem);line-height:1.14;letter-spacing:-.03em}
+h3{line-height:1.25}
+p{max-width:70ch;margin-top:.65rem}
+.hero figure{background:#eee5ed;border-radius:1rem;overflow:hidden}
+img{display:block;width:100%;object-fit:contain;background:#f0eaec}
+.hero img{height:auto;aspect-ratio:2/1}
+figcaption{padding:.45rem .7rem;font-size:.85rem;color:var(--muted)}
+nav{background:var(--lime);padding:1rem;border-radius:1rem}
+.categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:.45rem;list-style:none;margin:.7rem 0 0;padding:0}
+.categories a{display:block;padding:.42rem .65rem;background:var(--paper);border-radius:.45rem;font-weight:650}
+.categories a:hover{background:#fff}
+section{margin:2.25rem 0}
+.gallery,.guides{display:grid;gap:.75rem;margin-top:.9rem}
+.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery figure,article,details{border:1px solid var(--line);border-radius:.8rem;overflow:hidden;background:#fffdf9}
+.gallery img{height:auto;aspect-ratio:1}
+.guides{grid-template-columns:repeat(2,minmax(0,1fr))}
+article,details{padding:1rem}
+details{margin-top:.5rem}
+summary{cursor:pointer;font-weight:750}
+.cta{display:inline-block;margin-top:1rem;padding:.65rem .9rem;border-radius:.45rem;background:var(--plum);color:white;font-weight:700}
+footer{padding:1rem 0;background:var(--plum);color:white}
+@media(max-width:640px){.hero,.guides{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "name":"FansBuy spreadsheet : catégories, tailles et photos QC",
+  "inLanguage":"fr",
+  "mainEntity":[
+    {"@type":"Question","name":"Qu’est-ce qu’un FansBuy spreadsheet ?","acceptedAnswer":{"@type":"Answer","text":"C’est un répertoire de références et de liens produits classés par catégorie. Il sert à préparer une sélection et à retrouver les fiches d’origine."}},
+    {"@type":"Question","name":"Que montrent les photos QC ?","acceptedAnswer":{"@type":"Answer","text":"Elles permettent d’examiner les détails visibles d’un article, par exemple les coutures, l’étiquette et le coloris. Elles ne suffisent pas à établir son authenticité."}},
+    {"@type":"Question","name":"Comment comparer deux tailles indiquées en EU et en US ?","acceptedAnswer":{"@type":"Answer","text":"Mesurez votre pied en centimètres et reportez cette mesure au tableau du modèle concerné. Pour un vêtement, comparez ses dimensions à celles d’une pièce que vous portez déjà."}},
+    {"@type":"Question","name":"Comment estimer la livraison vers la France ?","acceptedAnswer":{"@type":"Answer","text":"Renseignez la destination et les dimensions du colis, puis vérifiez le poids facturé, le suivi et les taxes éventuelles auprès du prestataire choisi."}}
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/khdqw/">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="https://www.cafans.com">www.cafans.com</a>
+    <a href="https://www.cafans.com">Ouvrir le catalogue</a>
+  </div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <h1>FansBuy spreadsheet</h1>
+      <p>Repérez les chaussures, vêtements et accessoires par catégorie. Ce guide explique comment vérifier une fiche produit, comparer les tailles et examiner les photos de contrôle qualité (QC) avant une commande.</p>
+    </div>
+    <figure>
+      <img src="https://feature.com/cdn/shop/files/Nike-Air-Force-1-_07---White-CW2288-111---02-03-24---Feature--KN.jpg?v=1707085578&amp;width=800" width="800" height="400" fetchpriority="high" alt="Basket Nike Air Force 1 ’07 entièrement blanche, vue de profil">
+      <figcaption>Nike Air Force 1 ’07 blanche · exemple de silhouette</figcaption>
+    </figure>
+  </div>
+  <nav aria-labelledby="categories">
+    <h2 id="categories">Parcourir les catégories</h2>
+    <ul class="categories">
+      <li><a href="https://cafans.com/category-911-Shoes.html">Chaussures</a></li>
+      <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Sweats et pulls</a></li>
+      <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+      <li><a href="https://cafans.com/category-914-Jackets.html">Vestes</a></li>
+      <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Pantalons et shorts</a></li>
+      <li><a href="https://cafans.com/category-916-Headwear.html">Casquettes et bonnets</a></li>
+      <li><a href="https://cafans.com/category-917-Sets.html">Ensembles</a></li>
+      <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Sous-vêtements</a></li>
+      <li><a href="https://cafans.com/category-919-Jersey.html">Maillots</a></li>
+      <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires</a></li>
+    </ul>
+  </nav>
+  <section aria-labelledby="modeles">
+    <h2 id="modeles">Quels détails comparer sur les photos ?</h2>
+    <div class="gallery">
+      <figure>
+        <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Casquette Gucci beige en toile à motif GG">
+        <figcaption>Casquette Gucci · forme de la visière et réglage du tour de tête</figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/943J605A0554C080_E01-3?%24default_GHC%24=&amp;crop=438%2C150%2C1130%2C1358&amp;wid=480" width="480" height="577" loading="lazy" decoding="async" alt="T-shirt Dior CD Icon blanc à col rond">
+        <figcaption>T-shirt Dior CD Icon · coupe, col et emplacement de la broderie</figcaption>
+      </figure>
+      <figure>
+        <img src="https://tw.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--M46975_PM1_Side%20view.jpg?wid=480&amp;hei=480" width="480" height="480" loading="lazy" decoding="async" alt="Sac Louis Vuitton Neverfull MM brun en toile Monogram, vu de côté">
+        <figcaption>Sac Louis Vuitton Neverfull MM · forme du fond et attaches des anses</figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.hermes.com/is/image/hermesproduct/clic-h-bracelet--700001FP31-worn-1-0-0-1000-1000_b.jpg?wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Bracelet Hermès Clic H en émail blanc avec fermoir métallique en H">
+        <figcaption>Bracelet Hermès Clic H · largeur et détail du fermoir</figcaption>
+      </figure>
+    </div>
+    <p>Les modèles illustrent des points de comparaison. Consultez la fiche du vendeur pour connaître la disponibilité d’un article.</p>
+  </section>
+  <section aria-labelledby="guides">
+    <h2 id="guides">Guides pour préparer une commande</h2>
+    <div class="guides">
+      <article>
+        <h3>Retrouver la bonne variante</h3>
+        <p>Pour un lien Weidian, Taobao ou 1688, comparez la référence du produit et les variantes affichées. Enregistrez le lien source, le coloris et la taille choisis ensemble. Si la fiche a changé, demandez au vendeur de confirmer la variante avant de commander.</p>
+      </article>
+      <article>
+        <h3>Comparer la coupe en centimètres</h3>
+        <p>Mesurez à plat un vêtement qui vous va. Pour un sweat, comparez la largeur de poitrine et la longueur totale. Pour une veste, ajoutez la longueur de manche. Pour un maillot personnalisé, vérifiez aussi le nom, le numéro et la position du marquage.</p>
+      </article>
+      <article>
+        <h3>Lire les photos QC dans le bon ordre</h3>
+        <p>Vérifiez d’abord l’étiquette et le coloris. Examinez ensuite les coutures et les finitions en gros plan. Pour une paire de baskets, demandez une vue des deux semelles et une mesure si la pointure est incertaine. Pour un bijou, demandez une photo du fermoir ouvert.</p>
+      </article>
+      <article>
+        <h3>Comparer les options d’expédition</h3>
+        <p>Pour la France, la Belgique, la Suisse ou le Canada, comparez les devis avec la même destination et les mêmes dimensions. Relevez le poids réel et le poids volumétrique, puis vérifiez celui que le transporteur facture, les conditions de suivi et les éventuels frais à la réception.</p>
+      </article>
+    </div>
+  </section>
+  <section aria-labelledby="faq">
+    <h2 id="faq">Questions fréquentes</h2>
+    <details open>
+      <summary>Qu’est-ce qu’un FansBuy spreadsheet ?</summary>
+      <p>C’est un répertoire de références et de liens produits classés par catégorie. Il sert à préparer une sélection et à retrouver les fiches d’origine.</p>
+    </details>
+    <details>
+      <summary>Que montrent les photos QC ?</summary>
+      <p>Elles permettent d’examiner les détails visibles d’un article, par exemple les coutures, l’étiquette et le coloris. Elles ne suffisent pas à établir son authenticité.</p>
+    </details>
+    <details>
+      <summary>Comment comparer deux tailles indiquées en EU et en US ?</summary>
+      <p>Mesurez votre pied en centimètres et reportez cette mesure au tableau du modèle concerné. Pour un vêtement, comparez ses dimensions à celles d’une pièce que vous portez déjà.</p>
+    </details>
+    <details>
+      <summary>Comment estimer la livraison vers la France ?</summary>
+      <p>Renseignez la destination et les dimensions du colis, puis vérifiez le poids facturé, le suivi et les taxes éventuelles auprès du prestataire choisi.</p>
+    </details>
+    <a class="cta" href="https://www.cafans.com">Continuer vers CAFANS</a>
+  </section>
+</main>
+<footer>
+  <div class="wrap"><span>Guide éditorial indépendant</span><a href="https://www.cafans.com">www.cafans.com</a></div>
+</footer>
+</body>
+</html>
